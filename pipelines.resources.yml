@@ -3,14 +3,14 @@ resources:
   - name: test_be
     type: GitRepo
     configuration:
-      path: sdemo/java-backend
+      path: java-backend
       gitProvider: Github
  
   # Git repo for front-end source
   - name: test_fe
     type: GitRepo
     configuration:
-      path: sdemo/vue-frontend
+      path: vue-frontend
       gitProvider: Github
  
   # Build info for the application
