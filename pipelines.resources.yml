@@ -41,7 +41,7 @@ pipelines:
           configFileLocation: .
           configFileName: mvn-art-config
           inputResources:
-            - name: be_gitRepo
+            - name: test_be
           integrations:
             - name: myArtifactory
           runtime:
@@ -63,7 +63,7 @@ pipelines:
           sourceLocation: .
           repositoryName: npm-dev-virtual
           inputResources:
-            - name: fe_gitRepo
+            - name: test_fe
           integrations:
             - name: myArtifactory
  
@@ -101,7 +101,7 @@ pipelines:
             dockerImageName: 34.68.55.176:8082/docker-local/app
             dockerImageTag: ${run_number}
           inputResources:
-            - name: be_gitRepo
+            - name: test_be
               trigger: false
           inputSteps:
             - name: bld_backend
