@@ -3,12 +3,14 @@ resources:
   - name: test_be
     type: GitRepo
     configuration:
+      path: pipelines/java-backend
       gitProvider: Github
  
   # Git repo for front-end source
   - name: test_fe
     type: GitRepo
     configuration:
+      path: pipelines/vue-frontend
       gitProvider: Github
  
   # Build info for the application
