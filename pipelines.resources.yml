@@ -3,14 +3,14 @@ resources:
   - name: test_be
     type: GitRepo
     configuration:
-      path: chiponn/pipelines/be
+      path: chiponn/pipelines
       gitProvider: Github
  
   # Git repo for front-end source
   - name: test_fe
     type: GitRepo
     configuration:
-      path: chiponn/pipelines/fe
+      path: chiponn/pipelines
       gitProvider: Github
  
   # Build info for the application
