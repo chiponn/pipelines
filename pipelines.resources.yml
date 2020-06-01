@@ -1,13 +1,13 @@
 resources:
   # Git repo for back-end source
-  - name: be_gitRepo
+  - name: pipelines
     type: GitRepo
     configuration:
       path: sdemo/java-backend
       gitProvider: sdemo_github
  
   # Git repo for front-end source
-  - name: fe_gitRepo
+  - name: pipelines
     type: GitRepo
     configuration:
       path: sdemo/vue-frontend
